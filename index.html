@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>淘宝首页</title>
+    <script>
+    var scale = 1;
+    if(window.devicePixelRatio){
+    scale = scale / window.devicePixelRatio;
+    }
+    document.write('<meta name="viewport" content="initial-scale='+scale+',minimum-scale='+scale+',maximum-scale='+scale+',user-scalable=no" />');
+
+    toSize ();
+    function toSize () {
+    var html = document.getElementsByTagName("html")[0];
+    var screenW = html.getBoundingClientRect().width; 
+    html.style.fontSize = screenW/15 + "px";
+    }
+    window.addEventListener(
+    "orientationchange",
+    function(){
+        //横竖屏切换之后，会执行这里边的代码
+        toSize ();
+    },
+    false
+    );
+    window.addEventListener(
+    "resize",
+    function(){
+        //横竖屏切换之后，会执行这里边的代码
+        toSize ();
+    },
+    false
+    );
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="sao">扫一扫</a>
+        <div class="input_box">
+            <input type="text" />
+        </div>
+        <a href="#" class="mes">消息</a>
+    </header>
+    <div id="main">
+        <section class="banner1">
+            <a href="#">
+                <img src="img/banner2.png" alt="" />
+            </a>
+        </section>
+        
+        <ul class="pr_list">
+            <li>
+                <a href="#">
+                    <img src="img/tu1.png" alt="" />
+                    <span>天猫</span>
+                </a>
+            </li>
+
+             <li>
+                <a href="#">
+                    <img src="img/tu2.png" alt="" />
+                    <span>聚划算</span>
+                </a>
+            </li>
+
+             <li>
+                <a href="#">
+                    <img src="img/tu3.png" alt="" />
+                    <span>到家</span>
+                </a>
+            </li>
+
+             <li>
+                <a href="#">
+                    <img src="img/tu4.png" alt="" />
+                    <span>外卖</span>
+                </a>
+            </li>
+
+            <li class="two">
+                <a href="#">
+                    <img src="img/tu5.png" alt="" />
+                    <span>充值</span>
+                </a>
+            </li>
+
+             <li class="two">
+                <a href="#">
+                    <img src="img/tu6.png" alt="" />
+                    <span>阿里旅行</span>
+                </a>
+            </li>
+
+             <li class="two">
+                <a href="#">
+                    <img src="img/tu7.png" alt="" />
+                    <span>领金币</span>
+                </a>
+            </li>
+
+             <li class="two">
+                <a href="#">
+                    <img src="img/tu8.png" alt="" />
+                    <span>分类</span>
+                </a>
+            </li>
+        </ul>
+         
+         <div class="toutiao">
+             <h3>
+                 <img src="img/toutiao.png" alt="" />
+             </h3>
+             <span></span>
+             <p>原来小户型这样装修，宽敞逼格高</p>
+         </div>
+
+         <section class="banner2">
+             <div class="banner2_l">
+                 <h3>
+                     <img src="img/qiang.png" alt="" />
+                 </h3>
+                 <p>限时限量汇全国好货</p>
+                 <div class="time">
+                     <img src="img/time.png" alt="" />
+                 </div>
+                 <div class="yi">
+                     <img src="img/yi.png" alt="" />
+                 </div>
+
+             </div>
+             <div class="banner2_r">
+                <div class="haohuo">
+                    <h3>小资情调 精致生活</h3>
+                    <span class="camera"></span>
+                </div>
+                <div class="shopping">
+                    <h3>爱逛街</h3>
+                    <p>百万妹子品质推荐</p>
+                </div>
+                <div class="made">
+                    <h3>中国制造</h3>
+                    <p>只为品质买单</p>
+                </div>
+             </div>
+         </section>
+         
+         <section class="shihui">
+             <div class="shihui_head">
+                 <div class="line">
+                     
+                 </div>
+                 <span class="hui">
+                     
+                 </span>
+             </div>
+            <ul class="shihui_main clearfix">
+                <li class="dapai">
+                    <h4>非常大牌</h4>
+                    <p>独家精心甄选尖货</p>
+                    <a href="#">
+                        <img src="img/gezi.png" />
+                    </a>
+                </li>
+
+                <li class="jingxuan">
+                    <h4 class="one">全球精选</h4>
+                    <p class="two">冬日必备品</p>
+                    <a href="#">
+                        <img src="img/huazhuang.png" />
+                    </a>
+                </li>
+
+                <li class="chaozhi">
+                    <h4 class="one">超值量贩</h4>
+                    <p class="two">量贩礼盒装</p>
+                    <a href="#">
+                        <img src="img/juzi.png" />
+                    </a>
+                </li>
+
+                <li class="ju">
+                    <h4 class="one">聚名品</h4>
+                    <p class="two">奢品狂欢季</p>
+                    <a href="#">
+                        <img src="img/watch.png" />
+                    </a>
+                </li>
+
+                 <li class="tejie">
+                    <h4 class="one">天天特价</h4>
+                    <p class="two">每日上新超值千款!</p>
+                    <a href="#">
+                        <img src="img/shoes.png" />
+                    </a>
+                </li>
+
+                <li class="dianqing">
+                    <h4 class="one">品牌店庆</h4>
+                    <p class="two">限时3折起</p>
+                    <a href="#">
+                        <img src="img/egg.png" >
+                    </a>
+                </li>
+
+                <li class="liren">
+                    <h4 class="one">俪人购</h4>
+                    <p class="two">特卖嗨购</p>
+                    <a href="#">
+                        <img src="img/red.png" />
+                    </a>
+                </li>
+
+                <li class="qingcang">
+                    <h4 class="one">淘清仓</h4>
+                    <p class="two">品牌尾货清</p>
+                    <a href="#">
+                        <img src="img/orange.png">
+                    </a>
+                </li>
+            </ul>
+
+         </section>
+         
+         <section class="pinzhi">
+             <div class="pinzhi_head">
+                 <div class="line"> 
+                     
+                 </div>
+                 <span class="zhi">
+                     
+                 </span>
+             </div>
+             <ul class="pinzhi_main clearfix">
+                 <li class="shishang">
+                     <h4>全球时尚</h4>
+                     <p>平价买大牌</p>
+                     <a href="#">
+                         
+                     </a>
+                 </li>
+
+                 <li class="pinpai">
+                     <h4>品牌街</h4>
+                     <p>什么牌子好</p>
+                     <a href="#">
+                         
+                     </a>
+                 </li>
+
+                 <li class="tong">
+                     <h4>生活家</h4>
+                     <p>好生活不贵</p>
+                     <a href="#">
+                         <img src="img/tuoxie.png"  />
+                     </a>
+                 </li>
+
+                 <li class="tong">
+                     <h4>天猫焕新</h4>
+                     <p>精选新品</p>
+                     <a href="#">
+                         <img src="img/yurong.png" />
+                     </a>
+                 </li>
+
+                 <li class="tong">
+                     <h4>天天搞机</h4>
+                     <p>过年不打烊</p>
+                     <a href="#">
+                         <img src="img/phone.png" />
+                     </a>
+                 </li>
+
+                 <li class="tong">
+                     <h4>喵鲜生</h4>
+                     <p>全球生鲜尖货</p>
+                     <a href="#">
+                         <img src="img/liulian.png"/>
+                     </a>
+                 </li>
+
+                 <li class="tong">
+                     <h4>苏宁易购</h4>
+                     <p>正品好服务</p>
+                     <a href="#">
+                         <img src="img/nai.png"/>
+                     </a>
+                 </li>
+             </ul>
+         </section>
+
+         <section class="tese">
+             <div class="tese_head">
+                 <div class="line">
+                     
+                 </div>
+                 <span class="te">
+                     
+                 </span>
+             </div>
+             <ul class="tese_main clearfix">
+                 <li class="global">
+                     <h4>全球购</h4>
+                     <p>漂亮脸蛋儿养成记</p>
+                     <a href="#">
+                         <img src="img/muyu.png" />
+                     </a>
+                 </li>
+
+                 <li class="common">
+                     <h4>淘宝汇吃</h4>
+                     <p>鲜果抢先购</p>
+                     <a href="#">
+                         <img src="img/cherry.png" />
+                     </a>
+                 </li>
+
+                 <li class="common">
+                     <h4>极有家</h4>
+                     <p>撞色保温杯</p>
+                     <a href="#">
+                         <img src="img/shuiping.png" alt="" />
+                     </a>
+                 </li>
+
+                 <li class="paimai common">
+                     <h4>拍卖</h4>
+                     <p>底价狂欢趴</p>
+                     <a href="#">
+                         <img src="img/car.png" alt="" />
+                     </a>
+                 </li>
+
+                 <li class="lagan">
+                     <h4>中国制造</h4>
+                     <p>手工合金拉杆箱</p>
+                     <a href="#">
+                         <img src="img/lvxing.png"/>
+                     </a>
+                 </li>
+
+                 <li class="common">
+                     <h4>淘宝电影</h4>
+                     <p>好片推荐</p>
+                     <a href="#">
+                         <img src="img/ieer.png" alt="" />
+                     </a>
+                 </li>
+
+                 <li class="common">
+                     <h4>淘宝众筹</h4>
+                     <p>追剧神器</p>
+                     <a href="#">
+                         <img src="img/chongdian.png" alt="" />
+                     </a>
+                 </li>
+
+                 <li class="xinpin common">
+                     <h4>每日新品</h4>
+                     <p>亮瞎路人眼</p>
+                     <a href="#">
+                         <img src="img/qunzi.png" alt="" />
+                     </a>
+                 </li>
+             </ul>
+
+             <div class="banner3">
+                 <a href="#">
+                     <img src="img/banner3.png" alt="" />
+                 </a>
+             </div>
+         </section>
+
+         <section class="haodian">
+             <div class="haodian_head">
+                 <h2>每日好店</h2>
+                 <a href="#">
+                     更新40个好店
+                 </a>
+             </div>
+             <ul class="haodian_main clearfix">
+                 <li>
+                    <a href="#">
+                        <img src="img/hetao.png" alt="" />
+                    </a>
+                    <p>今日推荐——1天3波</p>
+                 </li>
+                 <li>
+                     <a href="#">
+                         <img src="img/kaixin.png" alt="" />
+                     </a>
+                     <p>吃吃吃</p>
+                 </li>
+             </ul>
+         </section>
+
+         <section class="like clearfix">
+            <div class="like_head">
+                  <div class="likeline">
+                      
+                  </div>
+                  <p>猜你喜欢</p>  
+            </div>
+            <ul class="pic_list clearfix">
+                
+
+                <li>
+                    <a href="#">
+                        <img src="img/jianshen.png" alt="" />
+                    </a>
+                    <p>
+                        [为你推荐]女王爱健身北极熊
+                        力荐欧洲进口高端运动
+                        <span>&yen; 79.0</span>
+                    </p>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="img/xia.png" alt="" />
+                    </a>
+                    <p>
+                        [为你推荐]【包邮】海产品
+                        即食虾 水一方虾仁500克
+                        <span>&yen; 142.4</span>
+                    </p>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="img/yigui.png" alt="" />
+                    </a>
+                    <p>
+                        [为你推荐]简约现代衣柜 
+                        简易韩风宜家风格衣橱衣柜
+                         <span>&yen; 186.2</span>
+                    </p>
+                   
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="img/wan.png" alt="" />
+                    </a>
+                    <p>
+                        [为你推荐]景德镇陶瓷器
+                        手绘珐琅彩莲花全手工
+                        <span>&yen; 1000.0</span>
+                    </p>
+                    
+                </li>
+
+                 <li>
+                    <a href="#">
+                        <img src="img/wan.png" alt="" />
+                    </a>
+                    <p>
+                        [为你推荐]景德镇陶瓷器
+                        手绘珐琅彩莲花全手工
+                         <span>&yen; 1000.0</span>
+                    </p>
+                   
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="img/wan.png" alt="" />
+                    </a>
+                    <p>
+                        [为你推荐]景德镇陶瓷器
+                        手绘珐琅彩莲花全手工
+                         <span>&yen; 1000.0</span>
+                    </p>
+                   
+                </li>
+
+                 <li>
+                    <a href="#">
+                        <img src="img/yigui.png" alt="" />
+                    </a>
+                    <p>
+                        [为你推荐]简约现代衣柜 
+                        简易韩风宜家风格衣橱衣柜
+                        <span>&yen; 186.2</span>
+                    </p>
+                    
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="img/yigui.png" alt="" />
+                    </a>
+                    <p>
+                        [为你推荐]简约现代衣柜 
+                        简易韩风宜家风格衣橱衣柜
+                         <span>&yen; 186.2</span>
+                    </p>
+                   
+                </li>
+
+            </ul>
+         </section>
+    </div>
+    <footer id="footer">
+        <a href="#" class="f1">首页</a>
+        <a href="#" class="f2">物流</a>
+        <a href="#" class="f3">购物车</a>
+        <a href="#" class="f4">我的淘宝</a>
+        <a href="#" class="f5">更多</a>
+    </footer>
+</body>
+</html>
